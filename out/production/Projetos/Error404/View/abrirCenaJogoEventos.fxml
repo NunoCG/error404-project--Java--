@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<GridPane alignment="center" hgap="10" prefHeight="720.0" prefWidth="1280.0" stylesheets="@../Styles/Styles.css" vgap="10" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Error404.Controller.CenaJogoEventos">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <AnchorPane prefHeight="720.0" prefWidth="1280.0">
+            <children>
+                <AnchorPane fx:id="infoPane" layoutY="-7.0" prefHeight="728.0" prefWidth="1280.0" style="-fx-background-color: #E5E5E5;" stylesheets="@../Styles/Styles.css">
+                    <children>
+                        <StackPane fx:id="topPane" layoutX="250.0" layoutY="7.0" prefHeight="85.0" prefWidth="1030.0" style="-fx-background-color: linear-gradient: #FF4B00;" stylesheets="@../Styles/Styles.css">
+                            <effect>
+                                <Blend />
+                            </effect>
+                     <children>
+                                <Label prefHeight="53.0" prefWidth="353.0" text="LOGO" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="36.0" />
+                                    </font>
+                                </Label>
+                     </children>
+                        </StackPane>
+                        <StackPane fx:id="logoPane" layoutY="7.0" prefHeight="85.0" prefWidth="250.0" style="-fx-background-color: linear-gradient: #FF4B00;" stylesheets="@../Styles/Styles.css">
+                            <effect>
+                        <Blend />
+                            </effect>
+                        </StackPane>
+                  <Label fx:id="labelCasa" layoutX="132.0" layoutY="111.0" text="Clube Casa">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="labelFora" layoutX="1027.0" layoutY="111.0" text="Clube Fora">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <TableView fx:id="tabelaFora" layoutX="904.0" layoutY="160.0" prefHeight="342.0" prefWidth="353.0">
+                     <columns>
+                        <TableColumn fx:id="colunaIdFora" prefWidth="69.0" text="ID" />
+                        <TableColumn fx:id="colunaJogadorFora" prefWidth="197.0" text="Jogador" />
+                        <TableColumn fx:id="colunaAmarelosFora" prefWidth="86.0" text="Amarelos" />
+                     </columns>
+                  </TableView>
+                  <Button fx:id="btnConfirmar" layoutX="603.0" layoutY="662.0" mnemonicParsing="false" onAction="#confirmar" text="Concluir" />
+                  <Label fx:id="resultadoCasa" layoutX="488.0" layoutY="146.0" prefHeight="53.0" prefWidth="32.0" text="0">
+                     <font>
+                        <Font size="72.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="resultadoFora" layoutX="734.0" layoutY="146.0" prefHeight="53.0" prefWidth="32.0" text="0">
+                     <font>
+                        <Font size="72.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="617.0" layoutY="146.0" prefHeight="53.0" prefWidth="32.0" text="-">
+                     <font>
+                        <Font size="72.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnAddGolosCasa" layoutX="540.0" layoutY="248.0" mnemonicParsing="false" onAction="#addGolosCasa" text="+" />
+                  <Button fx:id="btnRemoveGolosCasa" layoutX="408.0" layoutY="517.0" mnemonicParsing="false" onAction="#removeGolosCasa" prefHeight="25.0" prefWidth="25.0" text="-" />
+                  <Button fx:id="btnAddGolosFora" layoutX="696.0" layoutY="247.0" mnemonicParsing="false" onAction="#addGolosFora" text="+" />
+                  <Button fx:id="btnRemoveGolosFora" layoutX="829.0" layoutY="517.0" mnemonicParsing="false" onAction="#removeGolosFora" prefHeight="25.0" prefWidth="25.0" text="-" />
+                  <TableView fx:id="tabelaCasa" layoutX="18.0" layoutY="160.0" prefHeight="342.0" prefWidth="353.0">
+                    <columns>
+                      <TableColumn fx:id="colunaIdCasa" prefWidth="64.0" text="ID" />
+                      <TableColumn fx:id="colunaJogadorCasa" prefWidth="196.0" text="Jogador" />
+                        <TableColumn fx:id="colunaAmarelosCasa" prefWidth="92.0" text="Amarelos" />
+                    </columns>
+                  </TableView>
+                  <Label layoutX="18.0" layoutY="519.0" text="Substituir">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnAddSubstituicaoCasa" layoutX="96.0" layoutY="517.0" mnemonicParsing="false" onAction="#adicionarSubstituicaoCasa" text="+" />
+                  <Label layoutX="1198.0" layoutY="520.0" text="Substituir">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnAddSubstituicaoFora" layoutX="1160.0" layoutY="518.0" mnemonicParsing="false" onAction="#adicionarSubstituicaoFora" text="+" />
+                  <Label layoutX="18.0" layoutY="566.0" text="Cartão">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="1216.0" layoutY="567.0" text="Cartão">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="btnAddAmareloCasa" layoutX="96.0" layoutY="564.0" mnemonicParsing="false" onAction="#adicionarAmareloCasa" text="+" />
+                  <Button fx:id="btnAddVermelhoCasa" layoutX="145.0" layoutY="564.0" mnemonicParsing="false" onAction="#adicionarVermelhoCasa" text="+" />
+                  <Button fx:id="btnAddAmareloFora" layoutX="1160.0" layoutY="564.0" mnemonicParsing="false" onAction="#adicionarAmareloFora" text="+" />
+                  <Button fx:id="btnAddVermelhoFora" layoutX="1110.0" layoutY="564.0" mnemonicParsing="false" onAction="#adicionarVermelhoFora" text="+" />
+                  <Label layoutX="425.0" layoutY="250.0" text="Minuto">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="791.0" layoutY="251.0" text="Minuto">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="minutoGoloCasa" layoutX="478.0" layoutY="248.0" prefHeight="25.0" prefWidth="59.0" />
+                  <TextField fx:id="minuteGoloFora" layoutX="724.0" layoutY="247.0" prefHeight="25.0" prefWidth="59.0" />
+                  <TableView fx:id="tabelaGolosCasa" layoutX="408.0" layoutY="302.0" prefHeight="200.0" prefWidth="200.0">
+                    <columns>
+                      <TableColumn fx:id="colunaGoloCasaJog" prefWidth="109.0" text="Jogador" />
+                      <TableColumn fx:id="colMinutoCasa" prefWidth="90.0" text="Minuto" />
+                    </columns>
+                  </TableView>
+                  <TableView fx:id="tabelaGolosFora" layoutX="654.0" layoutY="302.0" prefHeight="200.0" prefWidth="200.0">
+                     <columns>
+                        <TableColumn fx:id="colunaGoloForaJog" prefWidth="109.0" text="Jogador" />
+                        <TableColumn fx:id="colMinutoFora" prefWidth="90.0" text="Minuto" />
+                     </columns>
+                  </TableView>
+                  <ComboBox fx:id="parteCombo" layoutX="558.0" layoutY="116.0" prefWidth="150.0" />
+                  <Label layoutX="506.0" layoutY="115.0" text="Parte">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                    </children>
+                </AnchorPane>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+            </children>
+        </AnchorPane>
+    </children>
+</GridPane>

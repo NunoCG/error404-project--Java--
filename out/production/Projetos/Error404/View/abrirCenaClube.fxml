@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" prefHeight="720.0" prefWidth="1280.0" vgap="10" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Error404.Controller.CenaClube">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <AnchorPane prefHeight="720.0" prefWidth="1280.0">
+            <children>
+                <AnchorPane fx:id="menuPane" prefHeight="724.0" prefWidth="250.0" style="-fx-background-color: #1F1F25;">
+                    <children>
+                        <StackPane fx:id="logoPane" prefHeight="85.0" prefWidth="250.0" style="-fx-background-color: linear-gradient: #FF4B00;" stylesheets="@../Styles/Styles.css">
+                            <children>
+                                <Label text="SLE" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="36.0" />
+                                    </font>
+                           <effect>
+                              <Blend />
+                           </effect>
+                                </Label>
+                            </children>
+                            <effect>
+                        <Blend />
+                            </effect>
+                        </StackPane>
+                        <Button fx:id="btnVer" layoutX="10.0" layoutY="240.0" mnemonicParsing="false" onAction="#verClube" prefHeight="51.0" prefWidth="230.0" stylesheets="@../Styles/Styles.css" text="Ver">
+                            <font>
+                                <Font size="24.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnCriar" layoutX="10.0" layoutY="300.0" mnemonicParsing="false" onAction="#criarClube" prefHeight="51.0" prefWidth="230.0" stylesheets="@../Styles/Styles.css" text="Criar">
+                            <font>
+                                <Font size="24.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnAlterar" layoutX="10.0" layoutY="360.0" mnemonicParsing="false" onAction="#alterarClube" prefHeight="51.0" prefWidth="230.0" stylesheets="@../Styles/Styles.css" text="Alterar">
+                            <font>
+                                <Font size="24.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnEliminar" layoutX="10.0" layoutY="420.0" mnemonicParsing="false" onAction="#eliminarClube" prefHeight="51.0" prefWidth="230.0" stylesheets="@../Styles/Styles.css" text="Eliminar">
+                            <font>
+                                <Font size="24.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnVoltar" layoutX="10.0" layoutY="665.0" mnemonicParsing="false" onAction="#voltar" prefHeight="51.0" prefWidth="230.0" style="-fx-background-color: #D8D8D8;" stylesheets="@../Styles/Styles.css" text="Voltar">
+                            <font>
+                                <Font size="24.0" />
+                            </font>
+                        </Button>
+                    </children>
+                </AnchorPane>
+                <AnchorPane fx:id="infoPane" layoutX="250.0" prefHeight="724.0" prefWidth="1030.0" style="-fx-background-color: #E5E5E5;">
+                    <children>
+                        <StackPane fx:id="topPane" prefHeight="85.0" prefWidth="1030.0" style="-fx-background-color: linear-gradient: #FF4B00;" stylesheets="@../Styles/Styles.css">
+                            <effect>
+                                <Blend />
+                            </effect>
+                     <children>
+                        <Label text="CLUBE" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                           <effect>
+                              <Blend />
+                           </effect>
+                        </Label>
+                     </children>
+                        </StackPane>
+                  <TableView fx:id="tableClube" layoutY="85.0" prefHeight="639.0" prefWidth="1030.0" stylesheets="@../Styles/Styles.css">
+                    <columns>
+                      <TableColumn fx:id="colId" prefWidth="75.0" text="ID" />
+                      <TableColumn fx:id="colNome" prefWidth="75.0" text="Nome" />
+                        <TableColumn fx:id="colPais" prefWidth="75.0" text="País" />
+                        <TableColumn fx:id="colCidade" prefWidth="75.0" text="Cidade" />
+                        <TableColumn fx:id="colEstadio" prefWidth="75.0" text="Estádio" />
+                        <TableColumn fx:id="colTitulos" prefWidth="75.0" text="Títulos SLE" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+    </children>
+</GridPane>

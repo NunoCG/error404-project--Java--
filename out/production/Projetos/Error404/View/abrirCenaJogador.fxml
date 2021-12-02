@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" prefHeight="720.0" prefWidth="1280.0" stylesheets="@../Styles/Styles.css" vgap="10" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Error404.Controller.CenaJogador">
+    <columnConstraints>
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <AnchorPane prefHeight="720.0" prefWidth="1280.0">
+            <children>
+                <AnchorPane fx:id="menuPane" prefHeight="724.0" prefWidth="250.0" style="-fx-background-color: #1F1F25;">
+                    <children>
+                        <StackPane fx:id="logoPane" prefHeight="85.0" prefWidth="250.0" style="-fx-background-color: linear-gradient: #FF4B00;" stylesheets="@../Styles/Styles.css">
+                            <children>
+                                <Label text="SLE" textFill="WHITE">
+                                    <font>
+                                        <Font name="System Bold" size="36.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                            <effect>
+                                <DropShadow>
+                                    <color>
+                                        <Color red="0.6973684430122375" green="0.6973684430122375" blue="0.6973684430122375" />
+                                    </color>
+                                </DropShadow>
+                            </effect>
+                        </StackPane>
+                        <Button fx:id="btnCriarJogador" layoutX="10.0" layoutY="240.0" mnemonicParsing="false" onAction="#criarJogador" prefHeight="51.0" prefWidth="230.0" stylesheets="@../Styles/Styles.css" text="Criar">
+                            <font>
+                                <Font size="24.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnAtualizarJog" layoutX="10.0" layoutY="300.0" mnemonicParsing="false" onAction="#atualizarJogador" prefHeight="51.0" prefWidth="230.0" stylesheets="@../Styles/Styles.css" text="Atualizar/Alterar">
+                            <font>
+                                <Font size="24.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnTransferirJog" layoutX="10.0" layoutY="413.0" mnemonicParsing="false" onAction="#transferirJogador" prefHeight="51.0" prefWidth="230.0" stylesheets="@../Styles/Styles.css" text="Transferir">
+                            <font>
+                                <Font size="24.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnEliminarJog" layoutX="10.0" layoutY="464.0" mnemonicParsing="false" onAction="#eliminarJogador" prefHeight="51.0" prefWidth="230.0" stylesheets="@../Styles/Styles.css" text="Eliminar">
+                            <font>
+                                <Font size="24.0" />
+                            </font>
+                        </Button>
+                        <Button fx:id="btnVoltar" layoutX="10.0" layoutY="665.0" mnemonicParsing="false" onAction="#voltar" prefHeight="51.0" prefWidth="230.0" style="-fx-background-color: #D8D8D8;" stylesheets="@../Styles/Styles.css" text="Voltar">
+                            <font>
+                                <Font size="24.0" />
+                            </font>
+                        </Button>
+                  <Button fx:id="btnInserir" layoutX="10.0" layoutY="362.0" mnemonicParsing="false" onAction="#inserirJogador" prefHeight="51.0" prefWidth="230.0" stylesheets="@../Styles/Styles.css" text="Inserir">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Button>
+                    </children>
+                </AnchorPane>
+                <AnchorPane fx:id="infoPane" layoutX="250.0" prefHeight="724.0" prefWidth="1030.0" style="-fx-background-color: #E5E5E5;">
+                    <children>
+                        <StackPane fx:id="topPane" prefHeight="85.0" prefWidth="1030.0" style="-fx-background-color: linear-gradient: #FF4B00;" stylesheets="@../Styles/Styles.css">
+                            <effect>
+                                <Blend />
+                            </effect>
+                     <children>
+                        <Label text="JOGADORES" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                     </children>
+                        </StackPane>
+                  <TableView fx:id="tableJogador" layoutY="155.0" prefHeight="569.0" prefWidth="1030.0">
+                    <columns>
+                      <TableColumn fx:id="colId" prefWidth="75.0" text="ID" />
+                      <TableColumn fx:id="colNome" prefWidth="470.0" text="Nome" />
+                        <TableColumn fx:id="colNacionalidade" minWidth="0.0" prefWidth="197.0" text="Nacionalidade" />
+                        <TableColumn fx:id="colDataNasc" prefWidth="200.0" text="Data de Nascimento" />
+                        <TableColumn fx:id="colPosicao" prefWidth="87.0" text="Posição" />
+                    </columns>
+                  </TableView>
+                  <TextField fx:id="txtPesquisar" layoutX="13.0" layoutY="100.0" prefHeight="35.0" prefWidth="420.0" promptText="Pesquisar">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </TextField>
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+    </children>
+</GridPane>

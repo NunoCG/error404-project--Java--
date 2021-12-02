@@ -1,0 +1,397 @@
+#logoPane {
+    -fx-background-color: linear-gradient(from 25px 25px to 80px 80px, #BF6540, #FF4B00);
+}
+
+#topPane {
+    -fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #FF4B00, #802600);
+}
+
+#btnLiga {
+    -fx-text-fill: #D8D8D8;
+    -fx-background-color: #1F1F25 !important;
+}
+
+#btnLiga:hover {
+    -fx-text-fill: #1F1F25;
+    -fx-background-color: #D8D8D8 !important;
+    -fx-background-radius: 100;
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 255), 7, 0, 0, 1);
+}
+
+#btnClube {
+    -fx-text-fill: #D8D8D8;
+    -fx-background-color: #1F1F25 !important;
+}
+
+#btnClube:hover {
+    -fx-text-fill: #1F1F25;
+    -fx-background-color: #D8D8D8 !important;
+    -fx-background-radius: 100;
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 255), 7, 0, 0, 1);
+}
+
+#btnJogador {
+    -fx-text-fill: #D8D8D8;
+    -fx-background-color: #1F1F25 !important;
+}
+
+#btnJogador:hover {
+    -fx-text-fill: #1F1F25;
+    -fx-background-color: #D8D8D8 !important;
+    -fx-background-radius: 100;
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 255), 7, 0, 0, 1);
+}
+
+#btnTreinador {
+    -fx-text-fill: #D8D8D8;
+    -fx-background-color: #1F1F25 !important;
+}
+
+#btnTreinador:hover {
+    -fx-text-fill: #1F1F25;
+    -fx-background-color: #D8D8D8 !important;
+    -fx-background-radius: 100;
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 255), 7, 0, 0, 1);
+}
+
+#btnSair {
+    -fx-text-fill: #D8D8D8;
+    -fx-background-color: #1F1F25 !important;
+}
+
+#btnSair:hover {
+    -fx-text-fill: #1F1F25;
+    -fx-background-color: #D8D8D8 !important;
+    -fx-background-radius: 100;
+    -fx-effect: dropshadow(gaussian, rgba(255, 255, 255, 255), 7, 0, 0, 1);
+}
+
+#btnVoltar {
+    -fx-text-fill: white;
+    -fx-background-color: #1F1F25 !important;
+}
+
+#btnVoltar:hover {
+    -fx-text-fill: black;
+    -fx-background-color: #D8D8D8 !important;
+    -fx-background-radius: 100;
+}
+
+#btnVer {
+    -fx-text-fill: white;
+    -fx-background-color: #1F1F25 !important;
+}
+
+#btnVer:hover {
+    -fx-text-fill: black;
+    -fx-background-color: #D8D8D8 !important;
+    -fx-background-radius: 100;
+}
+
+#btnCriar {
+    -fx-text-fill: white;
+    -fx-background-color: #1F1F25 !important;
+}
+
+#btnCriar:hover {
+    -fx-text-fill: black;
+    -fx-background-color: #D8D8D8 !important;
+    -fx-background-radius: 100;
+}
+
+#btnAlterar {
+    -fx-text-fill: white;
+    -fx-background-color: #1F1F25 !important;
+}
+
+#btnAlterar:hover {
+    -fx-text-fill: black;
+    -fx-background-color: #D8D8D8 !important;
+    -fx-background-radius: 100;
+}
+
+#btnEliminar {
+    -fx-text-fill: white;
+    -fx-background-color: #1F1F25 !important;
+}
+
+#btnEliminar:hover {
+    -fx-text-fill: black;
+    -fx-background-color: #D8D8D8 !important;
+    -fx-background-radius: 100;
+}
+
+#btnCriarClube {
+    -fx-text-fill: white;
+    -fx-background-color: #1F1F25 !important;
+    -fx-border-radius: 100;
+    -fx-border-color: white;
+}
+
+#btnCriarClube:hover {
+    -fx-text-fill: black;
+    -fx-background-color: #D8D8D8 !important;
+    -fx-background-radius: 100;
+}
+
+#btnClear {
+    -fx-text-fill: white;
+    -fx-background-color: #1F1F25 !important;
+}
+
+#btnClear:hover {
+    -fx-text-fill: black;
+    -fx-background-color: #D8D8D8 !important;
+    -fx-background-radius: 100;
+}
+
+#btnAtualizarClube {
+    -fx-text-fill: white;
+    -fx-background-color: #1F1F25 !important;
+    -fx-border-radius: 100;
+    -fx-border-color: white;
+}
+
+#btnAtualizarClube:hover {
+    -fx-text-fill: black;
+    -fx-background-color: #D8D8D8 !important;
+    -fx-background-radius: 100;
+}
+
+#btnBrowse {
+    -fx-text-fill: white;
+    -fx-background-color: #1F1F25 !important;
+}
+
+#btnBrowse:hover {
+    -fx-text-fill: black;
+    -fx-background-color: #D8D8D8 !important;
+    -fx-background-radius: 100;
+}
+
+#btnCriarJogador {
+    -fx-text-fill: white;
+    -fx-background-color: #1F1F25 !important;
+}
+
+#btnCriarJogador:hover {
+    -fx-text-fill: black;
+    -fx-background-color: #D8D8D8 !important;
+    -fx-background-radius: 100;
+}
+
+#btnAtualizarJog {
+    -fx-text-fill: white;
+    -fx-background-color: #1F1F25 !important;
+}
+
+#btnAtualizarJog:hover {
+    -fx-text-fill: black;
+    -fx-background-color: #D8D8D8 !important;
+    -fx-background-radius: 100;
+}
+
+#btnTransferirJog {
+    -fx-text-fill: white;
+    -fx-background-color: #1F1F25 !important;
+}
+
+#btnTransferirJog:hover {
+    -fx-text-fill: black;
+    -fx-background-color: #D8D8D8 !important;
+    -fx-background-radius: 100;
+}
+
+#btnEliminarJog {
+    -fx-text-fill: white;
+    -fx-background-color: #1F1F25 !important;
+}
+
+#btnEliminarJog:hover {
+    -fx-text-fill: black;
+    -fx-background-color: #D8D8D8 !important;
+    -fx-background-radius: 100;
+}
+
+.table-view .column-header {
+    -fx-background-color: #1F1F25;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #D8D8D8;
+}
+
+#colCidade {
+    -fx-alignment: CENTER;
+}
+
+#colClass {
+    -fx-alignment: CENTER;
+}
+
+#colClube {
+    -fx-alignment: CENTER;
+}
+
+#colDerrotas {
+    -fx-alignment: CENTER;
+}
+
+#colEmpates {
+    -fx-alignment: CENTER;
+}
+
+#colVitorias {
+    -fx-alignment: CENTER;
+}
+
+#colClube {
+    -fx-alignment: CENTER;
+}
+
+#colDG {
+    -fx-alignment: CENTER;
+}
+
+#colEstadio {
+    -fx-alignment: CENTER;
+}
+
+#colGM {
+    -fx-alignment: CENTER;
+}
+
+#colGS {
+    -fx-alignment: CENTER;
+}
+
+#colId {
+    -fx-alignment: CENTER;
+}
+
+#colJogos {
+    -fx-alignment: CENTER;
+}
+
+#colNome {
+    -fx-alignment: CENTER;
+}
+
+#colPais {
+    -fx-alignment: CENTER;
+}
+
+#colPontos {
+    -fx-alignment: CENTER;
+}
+
+#colTitulos {
+    -fx-alignment: CENTER;
+}
+
+#dataNascimento {
+    -fx-font-size: 15;
+    -fx-background-color: WHITE;
+}
+
+#comboPosicao {
+    -fx-font-size: 15;
+    -fx-background-color: WHITE;
+}
+
+#btnTransferir {
+    -fx-text-fill: white;
+    -fx-background-color: #1F1F25 !important;
+    -fx-border-radius: 100;
+    -fx-border-color: white;
+}
+
+#btnTransferir:hover {
+    -fx-text-fill: black;
+    -fx-background-color: #D8D8D8 !important;
+    -fx-background-radius: 100;
+}
+
+#btnDetalhes {
+    -fx-text-fill: white;
+    -fx-background-color: #1F1F25 !important;
+    -fx-border-radius: 100;
+    -fx-border-color: white;
+}
+
+#btnDetalhes:hover {
+    -fx-text-fill: black;
+    -fx-background-color: #D8D8D8 !important;
+    -fx-background-radius: 100;
+}
+
+#btnInserirJog {
+    -fx-text-fill: white;
+    -fx-background-color: #1F1F25 !important;
+    -fx-border-radius: 100;
+    -fx-border-color: white;
+}
+
+#btnInserirJog:hover {
+    -fx-text-fill: black;
+    -fx-background-color: #D8D8D8 !important;
+    -fx-background-radius: 100;
+}
+
+#btnInserir {
+    -fx-text-fill: white;
+    -fx-background-color: #1F1F25 !important;
+}
+
+#btnInserir:hover {
+    -fx-text-fill: black;
+    -fx-background-color: #D8D8D8 !important;
+    -fx-background-radius: 100;
+}
+
+#comboClubes {
+    -fx-background-color: white;
+    -fx-font-size: 15;
+}
+
+#datePickerInicio {
+    -fx-font-size: 15;
+}
+
+#datePickerFim {
+    -fx-font-size: 15;
+}
+
+#coluna {
+    -fx-alignment: CENTER;
+}
+
+.button {
+    -fx-background-color: #1F1F25 !important;
+    -fx-text-fill: white !important;
+}
+
+.button:hover {
+    -fx-background-color: black !important;
+}
+#btnAddAmareloCasa {
+    -fx-background-color: yellow !important;
+    -fx-text-fill: black !important;
+}
+#btnAddVermelhoCasa {
+    -fx-background-color: red !important;
+    -fx-text-fill: black !important;
+}
+#btnAddAmareloFora {
+    -fx-background-color: yellow !important;
+    -fx-text-fill: black !important;
+}
+#btnAddVermelhoFora {
+    -fx-background-color: red !important;
+    -fx-text-fill: black !important;
+}
+
+#combo {
+    -fx-background-color: white;
+    -fx-font-size: 15;
+}
